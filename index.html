@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Banner</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="status-bar">
+      <div class="status-bar__left">
+        <img
+          class="status-bar__connection"
+          src="images/connection.svg"
+          alt="connection"
+        />
+        <span class="status-bar__text text-regular">Sketch</span>
+        <img class="status-bar__wifi" src="images/wifi.svg" alt="wifi" />
+      </div>
+      <div class="status-bar__center">
+        <time class="status-bar__time text-semibold"
+          >9:41 <span class="status-bar__time--ampm">AM</span></time
+        >
+      </div>
+      <div class="status-bar__right">
+        <img
+          class="status-bar__connection moveable"
+          src="images/connection.svg"
+          alt="connection"
+        />
+        <img
+          class="status-bar__wifi moveable"
+          src="images/wifi.svg"
+          alt="wifi"
+        />
+        <img
+          class="status-bar__icon moved"
+          src="images/bluetooth.svg"
+          alt="bluetooth"
+        />
+        <span class="status-bar__text moved text-regular">100%</span>
+        <img
+          class="status-bar__icon"
+          src="images/capacity.svg"
+          alt="capacity"
+        />
+      </div>
+    </header>
+    <div class="banner">
+      <a href="#" class="close-btn">
+        <img src="images/cross@1.5x.svg" />
+      </a>
+      <h1
+        class="banner__title pro-heavy"
+        data-i18n="Get Unlimited <br>Access"
+      ></h1>
+      <div class="banner__images">
+        <div class="banner__image-item">
+          <div class="banner__image-wrapper">
+            <img
+              src="images/banner-1.png"
+              alt="Banner 1"
+              class="banner__image"
+            />
+            <div class="banner__image-caption">
+              <p
+                class="banner__image-text pro-regular"
+                data-i18n="Unlimited Art <br>Creation"
+              ></p>
+            </div>
+          </div>
+        </div>
+        <div class="banner__image-item">
+          <div class="banner__image-wrapper">
+            <img
+              src="images/banner-2.png"
+              alt="Banner 2"
+              class="banner__image"
+            />
+            <div class="banner__image-caption">
+              <p
+                class="banner__image-text pro-regular"
+                data-i18n="Exclusive <br>Styles"
+              ></p>
+            </div>
+          </div>
+        </div>
+        <div class="banner__image-item">
+          <div class="banner__image-wrapper">
+            <img
+              src="images/banner-3.png"
+              alt="Banner 3"
+              class="banner__image"
+            />
+            <div class="banner__image-caption">
+              <p
+                class="banner__image-text pro-regular"
+                data-i18n="Magic Avatars <br>With 20% Off"
+              ></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="plan-selection">
+        <a href="https://apple.com/" class="plan-btn-link">
+          <button class="plan-btn badge">
+            <div class="plan-btn__content">
+              <div class="plan-btn__left">
+                <span
+                  class="plan-btn__title display-semibold"
+                  data-i18n="YEARLY ACCESS"
+                ></span>
+                <span
+                  class="plan-btn__description display-regular"
+                  data-i18n="Just {{price}} per year"
+                  data-price="39.99"
+                ></span>
+              </div>
+              <div class="plan-btn__right">
+                <div
+                  class="plan-btn__price display-regular"
+                  data-i18n="{{price}} <br>per week"
+                  data-price="0.48$"
+                ></div>
+              </div>
+            </div>
+            <div
+              class="plan-btn__badge roboto-bold"
+              data-i18n="BEST OFFER"
+            ></div>
+          </button>
+        </a>
+        <a href="https://google.com/" class="plan-btn-link">
+          <button class="plan-btn" data-plan="monthly" data-price="4.99">
+            <div class="plan-btn__content">
+              <div class="plan-btn__left">
+                <span
+                  class="plan-btn__title display-semibold"
+                  data-i18n="WEEKLY ACCESS"
+                ></span>
+              </div>
+              <div class="plan-btn__right">
+                <div
+                  class="plan-btn__price display-regular"
+                  data-i18n="{{price}} <br>per week"
+                  data-price="6.99$"
+                ></div>
+              </div>
+            </div>
+          </button>
+        </a>
+        <button
+          id="continue-btn"
+          class="continue-btn pro-medium"
+          data-i18n="Continue"
+        ></button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__links">
+        <a href="#" data-i18n="Terms of Use" class="display-light"></a>
+        <a href="#" data-i18n="Privacy Policy" class="display-light"></a>
+        <a href="#" data-i18n="Restore" class="display-light"></a>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SF-Pro-Display-Light.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SF-Pro-Display-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/SF-Pro-Display-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/fonts/SFProText-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("/fonts/SFProText-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-primary: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-display: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  --font-text: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-roboto: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.roboto-bold {
+  font-family: var(--font-roboto);
+  font-weight: 700;
+}
+
+.pro-heavy {
+  font-family: var(--font-primary);
+  font-weight: 860;
+}
+
+.pro-regular {
+  font-family: var(--font-primary);
+  font-weight: 400;
+}
+
+.pro-medium {
+  font-family: var(--font-primary);
+  font-weight: 600;
+}
+
+.display-light {
+  font-family: var(--font-display);
+  font-weight: 200;
+}
+
+.display-regular {
+  font-family: var(--font-display);
+  font-weight: 400;
+}
+
+.display-semibold {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.text-regular {
+  font-family: var(--font-text);
+  font-weight: 400;
+}
+
+.text-semibold {
+  font-family: var(--font-text);
+  font-weight: 600;
+}
